@@ -1,5 +1,7 @@
 :root{
     --font: 'SpaceGrotesk', sans-serif;
+    --primary-color: #3778FA;
+    --link-color: #A0DA7A;
 }
 
 @font-face {
@@ -9,6 +11,7 @@
 
 *{
     margin: 0;
+    padding: 0;
 }
 
 body{
@@ -19,12 +22,239 @@ a{
     text-decoration: none;
 }
 
+img{
+    max-width: 100%;
+    display: block;
+}
+
+hr{
+    border: none;
+    background-color: #fff;
+    height: 0.07rem;
+    margin: 4rem 1.25rem 1.25rem 1.25rem;
+}
+
+footer{
+    background-color: var(--primary-color);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
 .container{
     display: flex;
 }
 
 .title{
-    color: #3778FA;
+    color: var(--primary-color);
     font-size: 2.2rem;
     font-weight: 500;
+}
+
+.desktop{
+    display: none;
+}
+
+.mobile img{
+    width: 2rem;
+    color: #000;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+}
+
+.hero{
+    margin-top: 5rem;
+}
+
+.hero-title{
+    font-size: 2.875rem;
+    text-align: center;
+    letter-spacing: 56;
+    margin-left: 2.375;
+    margin-right: 2.375;
+}
+
+.hero-subtitle{
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+.hero-img{
+    margin: 4rem 1.9rem 4rem 1.9rem;
+    justify-self: center;
+}
+
+.center{
+    margin-top: 10rem;
+}
+
+.center-title{
+    font-size: 1.875rem;
+    text-align: center;
+}
+
+.center-video{
+    margin: 4rem 1.9rem 4rem 1.9rem;
+    justify-self: center;
+}
+
+.faq{
+    margin-top: 10rem;
+    margin: 10rem 1.9rem 0 1.9rem;
+}
+
+.faq-title{
+    text-align: center;
+    font-size: 1.875rem;
+    margin-left: 5.75rem;
+    margin-right: 5.75rem;
+    margin-bottom: 3rem;
+}
+
+.faq-container{
+    flex-direction: column;
+    align-items: center;
+    background-color: #F3F3F3;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.faq-img{
+    margin-top: 2.5rem;
+}
+
+.cards{
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+    background-color: #fff;
+    margin: 0.7rem 0;
+    padding: 1rem 1rem;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.see-more{
+    font-weight: 50;
+}
+
+.learn-more{
+    color: #fff;
+    margin-top: 6rem;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.learn-more button{
+    color: #000;
+    border: none;
+    padding: 0.8rem 1.3rem;
+    border-radius: 100px;
+    margin: 0.5rem 40% 0 1.5rem;
+    background-color: #fff;
+}
+
+.learn-more a{
+    color: #000;
+    font-weight: 550;
+    border-radius: 100px;
+    font-size: 0.875rem;
+    letter-spacing: 0.3px;
+}
+
+.learn-more-title{
+    margin: 5rem 40% 0 1.5rem;
+    font-size: 2.6rem;
+}
+
+.learn-more-text{
+    margin: 0.3rem 47% 0 1.5rem;
+    font-weight: 100;
+}
+
+.grid{
+    display: grid;
+    color: #fff;
+}
+
+.grid a{
+    color: #fff;
+    grid-template-areas:
+    'main-block block-explore'
+    'block-aboutus block-terms block-social-media';
+}
+
+.blocks{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.main-block{
+    flex-direction: column;
+    grid-area: 'main-block';
+    margin: 3rem 50% 4rem 1.5rem;
+    gap: 1.5rem;
+}
+
+.main-block h4{
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.block-explore{
+    flex-direction: column;
+    grid-area: 'block-explore';
+    margin: 1rem 1rem 1rem 1.5rem;
+    gap: 1.7rem;
+}
+
+.block-aboutus{
+    flex-direction: column;
+    grid-area: 'block-aboutus';
+    margin: 1rem 1rem 1rem 1rem;
+    gap: 1.7rem;
+}
+
+.block-terms{
+    flex-direction: column;
+    grid-area: 'block-terms';
+    margin: 1rem;
+    gap: 1.7rem;
+}
+
+.block-social-media{
+    flex-direction: column;
+    grid-area: 'block-social-media';
+    margin: 1rem;
+    gap: 1.7rem;
+}
+
+.footer{
+    color: #fff;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin: 5rem 10rem 0 8rem;
+    padding-bottom: 2.2rem;
+    gap: 1.7rem;
+    text-align: center;
+    letter-spacing: 1;
+    font-weight: 100;
+}
+
+.footer a{
+    color: var(--link-color);
 }
