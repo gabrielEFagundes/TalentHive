@@ -187,25 +187,24 @@ footer{
 .grid{
     display: grid;
     color: #fff;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "main-block main-block block-explore"
+    "block-aboutus block-terms block-social-media";
 }
 
 .grid a{
     color: #fff;
-    grid-template-areas:
-    'main-block block-explore'
-    'block-aboutus block-terms block-social-media';
 }
 
 .blocks{
-    display: flex;
-    flex-wrap: wrap;
     margin-top: 1rem;
 }
 
 .main-block{
     flex-direction: column;
-    grid-area: 'main-block';
-    margin: 3rem 50% 4rem 1.5rem;
+    grid-area: main-block;
+    margin: 4rem 40% 1rem 1.5rem;
     gap: 1.5rem;
 }
 
@@ -214,31 +213,35 @@ footer{
     font-weight: 400;
 }
 
+.main-block p{
+    font-weight: 100;
+}
+
 .block-explore{
     flex-direction: column;
-    grid-area: 'block-explore';
-    margin: 1rem 1rem 1rem 1.5rem;
+    grid-area: block-explore;
+    margin: 4rem 1rem 1rem 1.5rem;
     gap: 1.7rem;
 }
 
 .block-aboutus{
     flex-direction: column;
-    grid-area: 'block-aboutus';
-    margin: 1rem 1rem 1rem 1rem;
+    grid-area: block-aboutus;
+    margin: 5rem 1rem 1rem 1.5rem;
     gap: 1.7rem;
 }
 
 .block-terms{
     flex-direction: column;
-    grid-area: 'block-terms';
-    margin: 1rem;
+    grid-area: block-terms;
+    margin: 5rem 1rem 1rem 1.5rem;
     gap: 1.7rem;
 }
 
 .block-social-media{
     flex-direction: column;
-    grid-area: 'block-social-media';
-    margin: 1rem;
+    grid-area: block-social-media;
+    margin: 5rem 1rem 1rem 1.5rem;
     gap: 1.7rem;
 }
 
